@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/biogeme-{{ version }}.tar.gz
   sha256: fe1169e09fcebe6c100e3c887c015301cba1e6abcd0f546eaf6e949104d52847
+  patches:
+    - pyproject.toml.patch
 
 build:
   noarch: python
