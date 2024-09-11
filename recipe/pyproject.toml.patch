@@ -1,0 +1,18 @@
+--- pyproject.toml	2024-09-11 11:47:26
++++ newpyproject.toml	2024-09-11 11:57:14
+@@ -35,7 +35,7 @@
+     "fuzzywuzzy>=0.18.0",
+     "cythonbiogeme==1.0.4",
+     "biogeme_optimization==0.0.10",
+-    "matplotlib>=3.9.0, <4",
++    "matplotlib>=3.8.4, <4",
+     "numpy>=2.0.0, <3",
+     "ipython>=8.25.0",
+     "Jinja2>=3.1.4"
+@@ -68,4 +68,4 @@
+ biogeme = ["data/data/*.dat"]
+ 
+ [tool.setuptools.exclude-package-data]
+-biogeme = ["*/__pycache__", "*/__pycache__/*", "*/*.pyc", "__pycache__", "*.pyc"]
+\ No newline at end of file
++biogeme = ["*/__pycache__", "*/__pycache__/*", "*/*.pyc", "__pycache__", "*.pyc"]
