@@ -32,7 +32,7 @@ requirements:
     - python-levenshtein >=0.25.1
     - fuzzywuzzy >=0.18.0
     - cythonbiogeme ==1.0.4
-    - biogeme-optimization ==0.0.10
+    - biogeme-optimization >=0.0.10
     - Jinja2 >=3.1.4
     - ipython 
 
