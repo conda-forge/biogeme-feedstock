@@ -1,20 +1,20 @@
 {% set name = "biogeme" %}
-{% set version = "3.2.14" %}
+{% set version = "3.3.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/biogeme-{{ version }}.tar.gz
-  sha256: fe1169e09fcebe6c100e3c887c015301cba1e6abcd0f546eaf6e949104d52847
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/biogeme-{{ version }}.tar.gz
+  sha256: 3f122ea9954ecdc7f86201b84a9be1f39f21e8ead65eb07279d8bbaf6a4f10e5
   patches:
     - pyproject.toml.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -34,7 +34,7 @@ requirements:
     - cythonbiogeme ==1.0.4
     - biogeme-optimization ==0.0.10
     - Jinja2 >=3.1.4
-    - ipython 
+    - ipython
 
 test:
   imports:
