@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - pandas >=2.3.0
+    - pandas >=2.3.0,<3
     - scipy >=1.15.3
     - tqdm >=4.67.1
     - tomlkit >=0.13.3
