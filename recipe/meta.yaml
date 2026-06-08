@@ -53,7 +53,7 @@ test:
 
 about:
   home: http://biogeme.epfl.ch
-  summary: Estimation and application of discrete choice models
+  summary: Estimation and application of discrete choice models.
   license: LicenseRef-BIOGEME
   license_file: LICENSE
   dev_url: https://github.com/michelbierlaire/biogeme
